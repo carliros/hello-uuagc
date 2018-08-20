@@ -1,0 +1,23 @@
+-- The file that defines the ADT(s)
+file : "src/Sem.ag"
+options :
+    haskellsyntax,
+
+    -- The data option exists because we want UUAGC to actually generate
+    -- a data definition from that description
+    data,
+
+    -- Optional: all fields in the data definition(s) are strict
+    strictdata,
+
+    -- The following two options have the compiler generate functions to access
+    -- the attributes from the outside
+    catas,
+    semfuns,
+    wrappers,
+    -- generate signatures for semantic functions
+    signatures,
+    -- optimize generated code
+    optimize,
+
+    pretty

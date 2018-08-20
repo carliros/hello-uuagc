@@ -35,6 +35,8 @@ resolver: lts-12.6
 #  - wai
 packages:
 - .
+#- ../uuagc-0.9.52.1
+#- ../uulib-0.9.23
 # Dependency packages to be pulled from upstream that are not in the resolver
 # using the same syntax as the packages field.
 # (e.g., acme-missiles-0.3)
@@ -63,3 +65,9 @@ packages:
 #
 # Allow a newer minor version of GHC than the snapshot specifies
 # compiler-check: newer-minor
+
+extra-deps:
+  - uuagc-cabal-1.1.0.0
+  - uuagc-0.9.52.1
+  - git: https://github.com/UU-ComputerScience/uulib.git
+    commit: 705bdc359b33b99455d98512eb3cec8df961fd23

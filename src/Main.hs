@@ -1,5 +1,6 @@
 module Main where
+import Sem
 
 main :: IO ()
 main = do
-  putStrLn "hello world"
+  putStrLn $ show test
